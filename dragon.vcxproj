@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug - Light|Win32">
+      <Configuration>Debug - Light</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_SDL2|Win32">
+      <Configuration>Debug_SDL2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Releases|Win32">
+      <Configuration>Releases</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SDL|Win32">
+      <Configuration>Release_SDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F254D4A-B60A-444E-AFD0-1B3D75255B6C}</ProjectGuid>
+    <RootNamespace>dragon</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>dragon2022</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31624.102</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>..\Library;$(ReferencePath)</ReferencePath>
+    <OutDir>D:\MoonClient</OutDir>
+    <IntDir>.\Debug</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>DragonRaja_GM</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'">
+    <ReferencePath>..\Library;$(ReferencePath)</ReferencePath>
+    <OutDir>D:\MoonClient</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>DragonRaja</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'">
+    <ReferencePath>..\Library;$(ReferencePath)</ReferencePath>
+    <OutDir>D:\MoonClient</OutDir>
+    <IntDir>.\Release_SDL\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>DragonRaja_SDL</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'">
+    <ReferencePath>..\Library;$(ReferencePath)</ReferencePath>
+    <OutDir>D:\MoonClient</OutDir>
+    <IntDir>.\Debug_SDL2</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>DragonRaja_GM_SDL</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'">
+    <ReferencePath>..\Library;c:\Program Files\Microsoft DirectX SDK (February 2007)\Lib\x64;$(ReferencePath)</ReferencePath>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dragon.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Debug/dragon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0417</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;ddraw.lib;wsock32.lib;dxguid.lib;..\directxlib\LIB\dinput.lib;winmm.lib;dsound.lib;ws2_32.lib;ijl11.lib;oldnames.lib;DesDll.lib;strmiids.lib;%(AdditionalDependencies);UxTheme.lib;windowscodecs.lib</AdditionalDependencies>
+      <OutputFile>D:\MoonClient/DragonRaja_GM.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Dragonraja_GM.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/dragon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dragon.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Custom</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Release/dragon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0417</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;ddraw.lib;wsock32.lib;dxguid.lib;..\directxlib\LIB\dinput.lib;winmm.lib;dsound.lib;ws2_32.lib;ijl11.lib;oldnames.lib;DesDll.lib;strmiids.lib;%(AdditionalDependencies);UxTheme.lib;windowscodecs.lib</AdditionalDependencies>
+      <OutputFile>D:\MoonClient/DragonRaja.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/Dragonraja.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/dragon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dragon.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Custom</Optimization>
+      <PreprocessorDefinitions>_SDL;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Release_SDL/dragon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release_SDL/</AssemblerListingLocation>
+      <ObjectFileName>.\Release_SDL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_SDL/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Library\SDL2-2.0.20\include;D:\dragonraja sourcecodenew\Library;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0417</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;ddraw.lib;wsock32.lib;dxguid.lib;..\directxlib\LIB\dinput.lib;winmm.lib;dsound.lib;ws2_32.lib;ijl11.lib;oldnames.lib;DesDll.lib;strmiids.lib;%(AdditionalDependencies);UxTheme.lib;windowscodecs.lib</AdditionalDependencies>
+      <OutputFile>D:\MoonClient/DragonRaja_SDL.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/Dragonraja.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\Library\SDL2-2.0.20\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/dragon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dragon.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SDL;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Debug_SDL/dragon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug_SDL/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug_SDL/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_SDL/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\Library\SDL2-2.0.20\include;D:\dragonraja sourcecodenew\Library;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0417</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;ddraw.lib;wsock32.lib;dxguid.lib;..\directxlib\LIB\dinput.lib;winmm.lib;dsound.lib;ws2_32.lib;ijl11.lib;oldnames.lib;DesDll.lib;strmiids.lib;%(AdditionalDependencies);UxTheme.lib;windowscodecs.lib</AdditionalDependencies>
+      <OutputFile>D:\MoonClient/DragonRaja_GM_SDL.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug_SDL/Dragonraja_GM.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\Library\SDL2-2.0.20\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/dragon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dragon.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LIGHT_GM_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <PrecompiledHeaderOutputFile>.\Debug/dragon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0417</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;ddraw.lib;wsock32.lib;dxguid.lib;dinput.lib;winmm.lib;dsound.lib;ws2_32.lib;ijl11.lib;oldnames.lib;DesDll.lib;strmiids.lib;nafxcw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Debug - Light/Dragonraja_LGM.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Dragonraja_GM.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/dragon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Ability.cpp" />
+    <ClCompile Include="ArenaManager.cpp" />
+    <ClCompile Include="auction.cpp" />
+    <ClCompile Include="BanSys.cpp" />
+    <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="BattleMgr.cpp" />
+    <ClCompile Include="BuffTimer.cpp" />
+    <ClCompile Include="char.cpp" />
+    <ClCompile Include="CharDataTable.cpp" />
+    <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="CMessage.cpp" />
+    <ClCompile Include="CombatSys.cpp" />
+    <ClCompile Include="Compress.cpp" />
+    <ClCompile Include="convert565to555.cpp" />
+    <ClCompile Include="Counseler.cpp" />
+    <ClCompile Include="CrackMgr.cpp" />
+    <ClCompile Include="CReadArgument.cpp" />
+    <ClCompile Include="cScreenEffect.cpp" />
+    <ClCompile Include="CurrentMsgMgr.cpp" />
+    <ClCompile Include="DebugLog.cpp" />
+    <ClCompile Include="directdraw.cpp" />
+    <ClCompile Include="directinput.cpp" />
+    <ClCompile Include="directsound.cpp" />
+    <ClCompile Include="dragon.cpp" />
+    <ClCompile Include="DualMgr.cpp" />
+    <ClCompile Include="EditWndMgr.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="exchangemgr.cpp" />
+    <ClCompile Include="FrameMgr.cpp" />
+    <ClCompile Include="ftwbrk.cpp" />
+    <ClCompile Include="gameproc.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Hangul.cpp" />
+    <ClCompile Include="Hong_Light.cpp" />
+    <ClCompile Include="Hong_Sprite.cpp" />
+    <ClCompile Include="Hong_Sub.cpp" />
+    <ClCompile Include="Horse.cpp" />
+    <ClCompile Include="House.cpp" />
+    <ClCompile Include="HunterSystem.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="ItemTable.cpp" />
+    <ClCompile Include="kh_cpp.cpp" />
+    <ClCompile Include="kh_menu.cpp" />
+    <ClCompile Include="kh_menuset.cpp" />
+    <ClCompile Include="Language.cpp" />
+    <ClCompile Include="LineCommand.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="LottoMgr.cpp" />
+    <ClCompile Include="LTSSupprot.cpp" />
+    <ClCompile Include="MagicSys.cpp" />
+    <ClCompile Include="MailMgr.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="MapInfo.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="menufunctions.cpp" />
+    <ClCompile Include="MenuNetwork.cpp" />
+    <ClCompile Include="MenuSet.cpp" />
+    <ClCompile Include="MenuStart.cpp" />
+    <ClCompile Include="MenuStartSet.cpp" />
+    <ClCompile Include="MergeData.cpp" />
+    <ClCompile Include="midi.cpp" />
+    <ClCompile Include="MouseCursor.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="nationsupport.cpp" />
+    <ClCompile Include="NationSys.cpp" />
+    <ClCompile Include="network.cpp" />
+    <ClCompile Include="network2.cpp" />
+    <ClCompile Include="network6.cpp" />
+    <ClCompile Include="network7.cpp" />
+    <ClCompile Include="NPC_18.cpp" />
+    <ClCompile Include="NPC_pattern.cpp" />
+    <ClCompile Include="NumberAniMgr.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="path.cpp" />
+    <ClCompile Include="Prison.cpp" />
+    <ClCompile Include="Profiler.cpp" />
+    <ClCompile Include="Quest.cpp" />
+    <ClCompile Include="QuestFunction.cpp" />
+    <ClCompile Include="QuestLog.cpp" />
+    <ClCompile Include="SDLRenderer.cpp" />
+    <ClCompile Include="SecuritySystem.cpp" />
+    <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="SkillTool.cpp" />
+    <ClCompile Include="skill_lsw.cpp" />
+    <ClCompile Include="SmallMenu.cpp" />
+    <ClCompile Include="SmallMenuSet.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug - Light|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Releases|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_SDL|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_SDL2|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StrikeSys.cpp" />
+    <ClCompile Include="sub_funtion.cpp" />
+    <ClCompile Include="SymbolMgr_Client.cpp" />
+    <ClCompile Include="teambattle.cpp" />
+    <ClCompile Include="TextOutMgr.cpp" />
+    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="word.cpp" />
+    <ClCompile Include="XorCrypt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dragon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ability.h" />
+    <ClInclude Include="ArenaManager.h" />
+    <ClInclude Include="auction.h" />
+    <ClInclude Include="BanSys.h" />
+    <ClInclude Include="Battle.h" />
+    <ClInclude Include="BattleMgr.h" />
+    <ClInclude Include="BuffTimer.h" />
+    <ClInclude Include="char.h" />
+    <ClInclude Include="CharDataTable.h" />
+    <ClInclude Include="Chat.h" />
+    <ClInclude Include="chigamec.h" />
+    <ClInclude Include="CMessage.h" />
+    <ClInclude Include="CombatSys.h" />
+    <ClInclude Include="Common\Anti_Other.h" />
+    <ClInclude Include="Common\Common.h" />
+    <ClInclude Include="Common\CSharedMem.h" />
+    <ClInclude Include="Common\Psapi.h" />
+    <ClInclude Include="Compress.h" />
+    <ClInclude Include="convert565to555.h" />
+    <ClInclude Include="Counseler.h" />
+    <ClInclude Include="CrackMgr.h" />
+    <ClInclude Include="CReadArgument.h" />
+    <ClInclude Include="cScreenEffect.h" />
+    <ClInclude Include="CurrentMsgMgr.h" />
+    <ClInclude Include="DebugLog.h" />
+    <ClInclude Include="directdraw.h" />
+    <ClInclude Include="directinput.h" />
+    <ClInclude Include="directsound.h" />
+    <ClInclude Include="dragon.h" />
+    <ClInclude Include="DualMgr.h" />
+    <ClInclude Include="EditWndMgr.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="exchangemgr.h" />
+    <ClInclude Include="FileMgr.h" />
+    <ClInclude Include="FrameMgr.h" />
+    <ClInclude Include="ftwbrk.h" />
+    <ClInclude Include="gameproc.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Hangul.h" />
+    <ClInclude Include="Hong_Light.h" />
+    <ClInclude Include="Hong_Sprite.h" />
+    <ClInclude Include="Hong_Sub.h" />
+    <ClInclude Include="Horse.h" />
+    <ClInclude Include="house.h" />
+    <ClInclude Include="HunterSystem.h" />
+    <ClInclude Include="ijl.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemTable.h" />
+    <ClInclude Include="Kein_stl.h" />
+    <ClInclude Include="kh_cpp.h" />
+    <ClInclude Include="language.h" />
+    <ClInclude Include="LineCommand.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="LottoMgr.h" />
+    <ClInclude Include="MagicSys.h" />
+    <ClInclude Include="MailMgr.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="MapInfo.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuDef.h" />
+    <ClInclude Include="menudef2.h" />
+    <ClInclude Include="MenuDefine.h" />
+    <ClInclude Include="menufunctions.h" />
+    <ClInclude Include="MenuNetwork.h" />
+    <ClInclude Include="MenuSet.h" />
+    <ClInclude Include="MenuStartSet.h" />
+    <ClInclude Include="MergeData.h" />
+    <ClInclude Include="midi.h" />
+    <ClInclude Include="MouseCursor.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="mytypes.h" />
+    <ClInclude Include="nationsupport.H" />
+    <ClInclude Include="NationSys.h" />
+    <ClInclude Include="network.h" />
+    <ClInclude Include="Network2.h" />
+    <ClInclude Include="Network3.h" />
+    <ClInclude Include="NetWork4.h" />
+    <ClInclude Include="Network5.h" />
+    <ClInclude Include="Network6.h" />
+    <ClInclude Include="network7.h" />
+    <ClInclude Include="NPC_Pattern.h" />
+    <ClInclude Include="NumberAniMgr.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="path.h" />
+    <ClInclude Include="Prison.h" />
+    <ClInclude Include="Profiler.h" />
+    <ClInclude Include="QuestFunction.h" />
+    <ClInclude Include="QuestLog.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDDIALOG.H" />
+    <ClInclude Include="Sdlang.h" />
+    <ClInclude Include="SDLRenderer.h" />
+    <ClInclude Include="SealStone.h" />
+    <ClInclude Include="SecuritySystem.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="SkillTool.h" />
+    <ClInclude Include="skill_lsw.h" />
+    <ClInclude Include="SmallMenu.h" />
+    <ClInclude Include="SmallMenuSet.h" />
+    <ClInclude Include="spdlog\async.h" />
+    <ClInclude Include="spdlog\async_logger-inl.h" />
+    <ClInclude Include="spdlog\async_logger.h" />
+    <ClInclude Include="spdlog\cfg\argv.h" />
+    <ClInclude Include="spdlog\cfg\env.h" />
+    <ClInclude Include="spdlog\cfg\helpers-inl.h" />
+    <ClInclude Include="spdlog\cfg\helpers.h" />
+    <ClInclude Include="spdlog\common-inl.h" />
+    <ClInclude Include="spdlog\common.h" />
+    <ClInclude Include="spdlog\details\backtracer-inl.h" />
+    <ClInclude Include="spdlog\details\backtracer.h" />
+    <ClInclude Include="spdlog\details\circular_q.h" />
+    <ClInclude Include="spdlog\details\console_globals.h" />
+    <ClInclude Include="spdlog\details\file_helper-inl.h" />
+    <ClInclude Include="spdlog\details\file_helper.h" />
+    <ClInclude Include="spdlog\details\fmt_helper.h" />
+    <ClInclude Include="spdlog\details\log_msg-inl.h" />
+    <ClInclude Include="spdlog\details\log_msg.h" />
+    <ClInclude Include="spdlog\details\log_msg_buffer-inl.h" />
+    <ClInclude Include="spdlog\details\log_msg_buffer.h" />
+    <ClInclude Include="spdlog\details\mpmc_blocking_q.h" />
+    <ClInclude Include="spdlog\details\null_mutex.h" />
+    <ClInclude Include="spdlog\details\os-inl.h" />
+    <ClInclude Include="spdlog\details\os.h" />
+    <ClInclude Include="spdlog\details\periodic_worker-inl.h" />
+    <ClInclude Include="spdlog\details\periodic_worker.h" />
+    <ClInclude Include="spdlog\details\registry-inl.h" />
+    <ClInclude Include="spdlog\details\registry.h" />
+    <ClInclude Include="spdlog\details\synchronous_factory.h" />
+    <ClInclude Include="spdlog\details\tcp_client-windows.h" />
+    <ClInclude Include="spdlog\details\tcp_client.h" />
+    <ClInclude Include="spdlog\details\thread_pool-inl.h" />
+    <ClInclude Include="spdlog\details\thread_pool.h" />
+    <ClInclude Include="spdlog\details\udp_client-windows.h" />
+    <ClInclude Include="spdlog\details\udp_client.h" />
+    <ClInclude Include="spdlog\details\windows_include.h" />
+    <ClInclude Include="spdlog\fmt\bin_to_hex.h" />
+    <ClInclude Include="spdlog\fmt\bundled\args.h" />
+    <ClInclude Include="spdlog\fmt\bundled\chrono.h" />
+    <ClInclude Include="spdlog\fmt\bundled\color.h" />
+    <ClInclude Include="spdlog\fmt\bundled\compile.h" />
+    <ClInclude Include="spdlog\fmt\bundled\core.h" />
+    <ClInclude Include="spdlog\fmt\bundled\format-inl.h" />
+    <ClInclude Include="spdlog\fmt\bundled\format.h" />
+    <ClInclude Include="spdlog\fmt\bundled\locale.h" />
+    <ClInclude Include="spdlog\fmt\bundled\os.h" />
+    <ClInclude Include="spdlog\fmt\bundled\ostream.h" />
+    <ClInclude Include="spdlog\fmt\bundled\printf.h" />
+    <ClInclude Include="spdlog\fmt\bundled\ranges.h" />
+    <ClInclude Include="spdlog\fmt\bundled\std.h" />
+    <ClInclude Include="spdlog\fmt\bundled\xchar.h" />
+    <ClInclude Include="spdlog\fmt\chrono.h" />
+    <ClInclude Include="spdlog\fmt\compile.h" />
+    <ClInclude Include="spdlog\fmt\fmt.h" />
+    <ClInclude Include="spdlog\fmt\ostr.h" />
+    <ClInclude Include="spdlog\fmt\ranges.h" />
+    <ClInclude Include="spdlog\fmt\std.h" />
+    <ClInclude Include="spdlog\fmt\xchar.h" />
+    <ClInclude Include="spdlog\formatter.h" />
+    <ClInclude Include="spdlog\fwd.h" />
+    <ClInclude Include="spdlog\logger-inl.h" />
+    <ClInclude Include="spdlog\logger.h" />
+    <ClInclude Include="spdlog\pattern_formatter-inl.h" />
+    <ClInclude Include="spdlog\pattern_formatter.h" />
+    <ClInclude Include="spdlog\sinks\android_sink.h" />
+    <ClInclude Include="spdlog\sinks\ansicolor_sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\ansicolor_sink.h" />
+    <ClInclude Include="spdlog\sinks\base_sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\base_sink.h" />
+    <ClInclude Include="spdlog\sinks\basic_file_sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\basic_file_sink.h" />
+    <ClInclude Include="spdlog\sinks\callback_sink.h" />
+    <ClInclude Include="spdlog\sinks\daily_file_sink.h" />
+    <ClInclude Include="spdlog\sinks\dist_sink.h" />
+    <ClInclude Include="spdlog\sinks\dup_filter_sink.h" />
+    <ClInclude Include="spdlog\sinks\hourly_file_sink.h" />
+    <ClInclude Include="spdlog\sinks\kafka_sink.h" />
+    <ClInclude Include="spdlog\sinks\mongo_sink.h" />
+    <ClInclude Include="spdlog\sinks\msvc_sink.h" />
+    <ClInclude Include="spdlog\sinks\null_sink.h" />
+    <ClInclude Include="spdlog\sinks\ostream_sink.h" />
+    <ClInclude Include="spdlog\sinks\qt_sinks.h" />
+    <ClInclude Include="spdlog\sinks\ringbuffer_sink.h" />
+    <ClInclude Include="spdlog\sinks\rotating_file_sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\rotating_file_sink.h" />
+    <ClInclude Include="spdlog\sinks\sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\sink.h" />
+    <ClInclude Include="spdlog\sinks\stdout_color_sinks-inl.h" />
+    <ClInclude Include="spdlog\sinks\stdout_color_sinks.h" />
+    <ClInclude Include="spdlog\sinks\stdout_sinks-inl.h" />
+    <ClInclude Include="spdlog\sinks\stdout_sinks.h" />
+    <ClInclude Include="spdlog\sinks\syslog_sink.h" />
+    <ClInclude Include="spdlog\sinks\systemd_sink.h" />
+    <ClInclude Include="spdlog\sinks\tcp_sink.h" />
+    <ClInclude Include="spdlog\sinks\udp_sink.h" />
+    <ClInclude Include="spdlog\sinks\wincolor_sink-inl.h" />
+    <ClInclude Include="spdlog\sinks\wincolor_sink.h" />
+    <ClInclude Include="spdlog\sinks\win_eventlog_sink.h" />
+    <ClInclude Include="spdlog\spdlog-inl.h" />
+    <ClInclude Include="spdlog\spdlog.h" />
+    <ClInclude Include="spdlog\stopwatch.h" />
+    <ClInclude Include="spdlog\tweakme.h" />
+    <ClInclude Include="spdlog\version.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StrikeSys.h" />
+    <ClInclude Include="SymbolMgr_Client.h" />
+    <ClInclude Include="teambattle.h" />
+    <ClInclude Include="TextOutMgr.h" />
+    <ClInclude Include="Tool.h" />
+    <ClInclude Include="word.h" />
+    <ClInclude Include="XorCrypt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClientLogon.tlh" />
+    <None Include="ClientLogon.tli" />
+    <None Include="cursor4.cur" />
+    <None Include="thidchk.tlh" />
+    <None Include="thidchk.tli" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="DesDll.lib" />
+    <Library Include="ijl11.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="dragon.ico" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

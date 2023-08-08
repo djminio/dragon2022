@@ -1,0 +1,23 @@
+
+
+700000 Seconds = 8 Days = 8 Days, 2 Hours, 26 Minutes and 39 Seconds
+3 Days = 259200 Seconds = 259200 Seconds
+
+7 Days = 604800 Seconds = 604800 Seconds
+14 Days = 1209600 Seconds = 1209600 Seconds
+13700000 Seconds = 158.5648 Days = 158 Days, 13 Hours, 33 Minutes and 19 Seconds
+
+
+AddCurrentStatusMessage( 255,255,0,"Ended Exp Event");
+
+
+if(lvl_min <= 0) lvl_min = 1;
+				if(lvl_min > 150) lvl_min = 150;
+				if(lvl_max <= 0) lvl_max = 1;
+				if(lvl_max > 150) lvl_max = 150;
+
+
+
+CHARLIST *pMaster = CheckServerId(cn);
+	if (!pMaster) return;
+	if(!pMaster->IsCounselor()) return;
